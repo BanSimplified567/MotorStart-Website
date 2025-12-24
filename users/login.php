@@ -47,7 +47,7 @@
                 <p class="link">Don't have an account? <a href="registration.php">Register here!</a></p>
                 <hr />
 
-            
+
         </form>
         <?php
             }

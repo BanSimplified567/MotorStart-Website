@@ -1,8 +1,14 @@
 <?php
 
-    $con = mysqli_connect("localhost","root","","admins");
-    // Check connection
-    if (mysqli_connect_errno()){
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    }
-?>
+$con = mysqli_connect(
+    'localhost',
+    'root',
+    '',
+    'motorstart',
+    3306
+);
+
+
+if (!$con) {
+    die('Database connection failed: ' . mysqli_connect_error());
+}
